@@ -25,7 +25,7 @@ The aim of this project is to make this icon pack available through various pack
 - [NuGet](https://www.nuget.org)
 
 
-All icons are supplied in GIF format.
+All icons are supplied in `GIF` format.
 
 
 ## CSS spritesheets
@@ -57,22 +57,22 @@ Just remember to add the CSS stylesheet to the HEAD of your HTML page!
 
 Get the package with NPM
 
-> npm install famfamfam-mini
+> `npm install famfamfam-mini`
 
 
 Get the package with Bower
 
-> bower install famfamfam-mini
+> `bower install famfamfam-mini`
 
 
 Get the package with Composer / Packagist
 
-> composer require legacy-icons/famfamfam-mini
+> `composer require legacy-icons/famfamfam-mini`
 
 
 Get the package with NuGet
 
-> Install-Package famfamfam-mini
+> `Install-Package famfamfam-mini`
 
 
 ## Build the whole project or your custom project
@@ -83,26 +83,26 @@ After gulp is installed, and your CLI is pointed to your work directory, first i
 
 **with NPM 2.x.x**
 
-> npm install
+> `npm install`
 
 **with NPM 3.x.x** (resolve dependencies for `node-spritesheet` before this module's ones)
 
-> npm install grunt grunt-contrib-coffee grunt-contrib-clean
+> `npm install grunt grunt-contrib-coffee grunt-contrib-clean`
 
-> npm install
+> `npm install`
 
 then be sure that you have *[ImageMagick](http://www.imagemagick.org/script/binary-releases.php)* installed for building spritesheet.
 
 then, you can run the `gulp build` task to build the project:
 
-> gulp build
+> `gulp build`
 
 
 ### What the build task does?
 
-First, it copies GIF files from the `src` folder, and pastes them to the `dist` folder.
+First, it copies `GIF` files from the `src` folder, and pastes them to the `dist` folder.
 
-Then it creates a spritesheet from the GIF images located in the `src` folder, and thus creates the `sprite` folder in `dist`.
+Then it creates a spritesheet from the `GIF` images located in the `src` folder, and thus creates the `sprite` folder in `dist`.
 
 If, for example you just want `action_stop` and `page_right` icons in a spritesheet, you just have to fork this project, point your CLI to the working directory, 
 empty the `src` directory, except `action_stop` and `page_right` icons in GIF format, and then run the `gulp build` task.
